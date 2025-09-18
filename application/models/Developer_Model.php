@@ -40,27 +40,27 @@ class Developer_Model extends CI_Model {
                 {
                    $_SESSION['activeDeveloper'] = $uniqID;
                    redirect(base_url('developer_dashboard'));
-                  //  echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
-                  //  echo '<script type="text/javascript">
-                  //   setTimeout(function () { 
-                  //       swal("Login Success!","Welcome Onboard!\nNow access your dashboard seamlessly","success").then(function(){
-                  //           window.location.href = "'.base_url('developer_dashboard').'";
-                  //       });
-                  //   }, 100);
-                  // </script>';
+                   echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
+                   echo '<script type="text/javascript">
+                    setTimeout(function () { 
+                        swal("Login Success!","Welcome Onboard!\nNow access your dashboard seamlessly","success").then(function(){
+                            window.location.href = "'.base_url('developer_dashboard').'";
+                        });
+                    }, 100);
+                  </script>';
 
                 }
                 else
                 {
                     redirect(base_url('developer'));
-                  //  echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
-                  //  echo '<script type="text/javascript">
-                  //   setTimeout(function () { 
-                  //       swal("Login Failed!","Sorry Could not login. Credential Failed","error").then(function(){
-                  //           window.location.href = "'.base_url('developer').'";
-                  //       });
-                  //   }, 100);
-                  // </script>';
+                   echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
+                   echo '<script type="text/javascript">
+                    setTimeout(function () { 
+                        swal("Login Failed!","Sorry Could not login. Credential Failed","error").then(function(){
+                            window.location.href = "'.base_url('developer').'";
+                        });
+                    }, 100);
+                  </script>';
                 }
             }
         }     
